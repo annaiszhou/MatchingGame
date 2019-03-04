@@ -1,0 +1,76 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF5722;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50 px;
+    padding: 0rem 10rem 1rem 10rem;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: #FFAB91;
+}
+
+.board{
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .75rem auto;
+}
+
+.board .card{
+    width: 12%;
+    height: 150px;
+    background: #FF6E40;
+    box-shadow: 1rem 0 .5rem rgba(0, 0, 0, .1);
+    margin: 1rem 1rem;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .card i{
+    color: #fff;
+    font-size: 3rem;
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+
+.board .card i.hidden{
+    color: #fff;
+    font-size: 3rem;
+    transform: scale(0);
+    transition: all .25s ease-in;
+}
+
+.life i.hidden{
+    color: #fff;
+    font-size: 3rem;
+    transform: scale(0);
+    transition: all .25s ease-in;
+}
+
+.gameover, .winner {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all .25s ease-in;
+}
